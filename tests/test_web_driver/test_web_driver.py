@@ -18,7 +18,7 @@ class TestWebDriver(unittest.TestCase):
 
     def test_init_web_driver_edge(self):
         self.driver = WebDriver("edge", dict_options=self.dict_options).driver
-        assert self.driver.capabilities['browserName'] == "edge"
+        assert self.driver.capabilities['browserName'] == "MicrosoftEdge"
 
     def test_init_web_driver_firefox(self):
         self.driver = WebDriver("firefox", dict_options=self.dict_options).driver
