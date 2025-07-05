@@ -12,3 +12,6 @@ class ChromeDriver:
 
     def init_chrome_driver(self):
         return webdriver.Chrome(options=self.options, service=ChromeService(ChromeDriverManager().install()))
+
+    def get_url(self):
+        return self.driver.current_url
